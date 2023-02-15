@@ -1,6 +1,6 @@
 # Sıfırdan Projelerle Yeni Nesil Front-End ve React Eğitimi
 
-İlerleme Durumu : ![15%](https://progress-bar.dev/10)
+İlerleme Durumu : ![15%](https://progress-bar.dev/15)
 
 ## "Hello, World!" :)
 React Eğitimi hazırlamam için gelen baskılarından dolayı Udemy'de Platformunda yayınlanmak üzere eğitim hazırlamaya karar verdim.
