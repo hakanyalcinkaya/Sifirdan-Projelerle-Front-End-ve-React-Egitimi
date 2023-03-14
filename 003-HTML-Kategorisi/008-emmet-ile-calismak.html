@@ -18,6 +18,8 @@
         lorem -- anlamsiz kelimeler olustur
         * -- x kadar cogalt
         () -- grupla
+        $ -- sirali islem baslat..
+        []  -- attr kullanimi
      -->
 
     <!-- . -> classlar ile calismak -->
@@ -121,6 +123,123 @@
         <li>Corporis?</li>
         <li>Culpa?</li>
         <li>Laborum.</li>
+    </ul>
+
+
+    <!-- Bilgileri Birlestir -->
+    <!-- h1 class title olsun, h2 class sub-title ve 3 paragraf icinde lorem 2 ul icinde yine .item class bilgisi olan 5 li olsun -->
+
+    <!-- h1.title>lorem1^h2.sub-title>lorem3^p*3>lorem5^ul*2>li.item*5>lorem1 -->
+    <!-- 1 makale.. -->
+    <h1 class="title">Lorem.</h1>
+    <h2 class="sub-title">Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Commodi accusamus eius voluptate odit?</p>
+    <p>Facere molestiae optio sed hic.</p>
+    <ul>
+        <li class="item">Lorem.</li>
+        <li class="item">Perferendis.</li>
+        <li class="item">Aperiam.</li>
+        <li class="item">Aliquid?</li>
+        <li class="item">Perspiciatis.</li>
+    </ul>
+    <ul>
+        <li class="item">Lorem.</li>
+        <li class="item">Consequatur.</li>
+        <li class="item">Iure!</li>
+        <li class="item">Ipsam!</li>
+        <li class="item">Incidunt.</li>
+    </ul>
+    
+    <!-- Birden Fazla Bilginin Gruplanmasi -->
+    <!-- h1.title>lorem1^(h2.sub-title>lorem3^p*3>lorem5^ul*2>li.item*5>lorem1)*2 -->
+    <h1 class="title">Lorem.</h1>
+    <h2 class="sub-title">Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Nesciunt deleniti quibusdam quis porro.</p>
+    <p>Dolorum exercitationem voluptatibus consectetur distinctio.</p>
+    <ul>
+        <li class="item">Lorem.</li>
+        <li class="item">Sit.</li>
+        <li class="item">Sequi.</li>
+        <li class="item">Harum.</li>
+        <li class="item">Enim.</li>
+    </ul>
+    <ul>
+        <li class="item">Lorem.</li>
+        <li class="item">Accusamus?</li>
+        <li class="item">Recusandae!</li>
+        <li class="item">Magni?</li>
+        <li class="item">Voluptate!</li>
+    </ul>
+    <h2 class="sub-title">Omnis, fuga ullam?</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Vitae corrupti ratione odit aut!</p>
+    <p>Dolorum vitae eaque obcaecati rem.</p>
+    <ul>
+        <li class="item">Lorem.</li>
+        <li class="item">Pariatur!</li>
+        <li class="item">Voluptatum.</li>
+        <li class="item">Atque!</li>
+        <li class="item">Praesentium.</li>
+    </ul>
+    <ul>
+        <li class="item">Lorem.</li>
+        <li class="item">Laudantium!</li>
+        <li class="item">Eius!</li>
+        <li class="item">Neque.</li>
+        <li class="item">Animi.</li>
+    </ul>
+
+    <!-- $ kullanimi -->
+
+    <!-- ul>li*5>{item -- $ } -->
+    <ul>
+        <li>item -- 1 </li>
+        <li>item -- 2 </li>
+        <li>item -- 3 </li>
+        <li>item -- 4 </li>
+        <li>item -- 5 </li>
+    </ul>
+    
+    <!-- ul>li.item-$*5>{item -- $ } -->
+    <ul>
+        <li class="item-1">item -- 1 </li>
+        <li class="item-2">item -- 2 </li>
+        <li class="item-3">item -- 3 </li>
+        <li class="item-4">item -- 4 </li>
+        <li class="item-5">item -- 5 </li>
+    </ul>
+    
+    <ul>
+        <li class="item-1">item -- 1 </li>
+        <li class="item-2">item -- 2 </li>
+        <li class="item-3">item -- 3 </li>
+        <li class="item-4">item -- 4 </li>
+        <li class="item-5">item -- 5 </li>
+    </ul>
+
+    <!-- h1.# -->
+    <h1 class="" id=""></h1>
+
+    <!-- h2.#*5 -->
+    <h2 class="1" id="2">3</h2>
+    <h2 class="1" id="2">3</h2>
+    <h2 class="" id=""></h2>
+    <h2 class="" id=""></h2>
+    <h2 class="" id=""></h2>
+
+    
+    <!-- p[title="info"]>lorem1 -->
+    p[title="info"]>lorem1
+    
+    <!-- ul>li*5>img[src="#" alt="info"] -->
+    <ul>
+        <li><img src="#" alt="info"></li>
+        <li><img src="#" alt="info"></li>
+        <li><img src="#" alt="info"></li>
+        <li><img src="#" alt="info"></li>
+        <li><img src="#" alt="info"></li>
     </ul>
     
 </body>
