@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* 
+    display: block, inline ve inline-block kullanimlari
+    */
+    .box {
+      width: 400px;
+      height: 100px;
+      background-color: red;
+      display: inline-block;
+    }
+    .span-box {
+      width: 400px;
+      height: 100px;
+      background-color: yellow;
+      display: inline-block;
+      /* display: block; */
+    }
+    span.info {
+      background-color: red;
+      width: 200px;
+      height: 30px;
+      display: inline-block;
+    }
+
+    strong  {
+      background-color: orange;
+      width: 600px;
+      height: 50px;
+      display: inline-block;
+    }
+  </style>
+  <title>Box Model Ozellikleri</title>
+</head>
+<body>
+  <div class="box">Lorem ipsum dolor sit.</div>
+  <div class="box">Neque optio necessitatibus magni.</div>
+  <div class="box">Laboriosam minus blanditiis mollitia!</div>
+
+  <span class="span-box">Lorem ipsum dolor sit amet.</span>
+  <span class="span-box">Nesciunt unde deleniti quae eius.</span>
+  <span class="span-box">Ipsam perferendis non illum quo.</span>
+
+  <p>
+    Lorem ipsum dolor <span class="info">sit amet</span> <strong>consectetur adipisicing</strong> elit. Corporis consequuntur reprehenderit quia ut consectetur. Nobis, quasi rerum libero distinctio dolorum suscipit optio beatae ducimus! Consectetur fuga laborum dolorum natus repudiandae?
+  </p>
+</body>
+</html>
