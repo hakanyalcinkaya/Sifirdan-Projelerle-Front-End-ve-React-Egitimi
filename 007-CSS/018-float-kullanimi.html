@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .box {
+      width: 150px;
+      float: left;
+      margin-right: 10px;
+    }
+    .bg-aqua {
+      background-color: aqua;
+    }
+
+    .clear-fix {
+      clear: both;
+    }
+
+    .bg-red {
+      background-color: red;
+    }
+
+    main {
+      width: 800px;
+      margin: 20px auto 0;
+    }
+
+    main > aside {
+      width: 30%;
+      float: left;
+    }
+    main > section {
+      float: left;
+      width: 70%;
+    }
+  </style>
+  <title>Float Kullanimi</title>
+</head>
+<body>
+  <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/float -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/clear -->
+  
+  <div class="box bg-aqua">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, hic?</div>
+  <div class="box bg-aqua">Modi deserunt explicabo molestias laborum pariatur quisquam nulla. Adipisci, saepe!</div>
+  <div class="box bg-aqua">Ipsam atque quis placeat recusandae doloribus qui quasi libero magnam?</div>
+  <div class="box bg-aqua">Rerum totam mollitia modi? Enim hic aliquid cum voluptatibus iusto?</div>
+  <div class="box bg-aqua">Aliquid dicta provident impedit tempore laboriosam quas fugit ratione! Impedit?</div>
+  <div class="clear-fix"></div>
+  <div class="bg-red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, quaerat!</div>
+
+  <!-- main>aside>ul>li*10>lorem1^^^section>h1>lorem10^p*3>lorem20 -->
+  <main>
+    <aside class="bg-aqua">
+      <ul>
+        <li>Lorem.</li>
+        <li>Culpa.</li>
+        <li>Incidunt!</li>
+        <li>Error?</li>
+        <li>Cumque!</li>
+        <li>Odit.</li>
+        <li>Hic.</li>
+        <li>Corporis.</li>
+        <li>Perspiciatis!</li>
+        <li>Maiores!</li>
+      </ul>
+    </aside>
+    <section class="bg-red">
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dolorum.</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, nulla. Commodi illum placeat repellendus natus magnam fugiat neque inventore quam!</p>
+      <p>Omnis iusto, eligendi quae quos inventore eos quasi molestias deserunt debitis voluptatibus voluptates exercitationem dolorem, suscipit maiores consequuntur illum! Mollitia.</p>
+      <p>Odio alias vel qui recusandae voluptate, voluptas ducimus temporibus repellat fugiat, veritatis amet ipsa illo nesciunt dolores quam eos magnam.</p>
+    </section>
+  </main>
+
+</body>
+</html>
