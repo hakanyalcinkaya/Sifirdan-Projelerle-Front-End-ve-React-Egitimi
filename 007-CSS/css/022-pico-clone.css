@@ -50,6 +50,10 @@ main {
 
 /* NAV */
 
+header {
+  border-bottom: 1px solid var(--silver);
+}
+
 header > nav {
   width: var(--box-size);
   margin: 0 auto;
@@ -94,11 +98,12 @@ header > nav > ul > li:last-child > a:hover {
 /* MAIN */
 main {
   width: var(--box-size);
-  margin: 0 auto;
-  min-height: 600px;
+  margin: 0 auto 30px;
+  /* min-height: 800px; */
   border: 1px solid var(--silver);
   border-radius: 4px;
   padding: 20px;
+
 }
 
 /* ASIDE  */
@@ -129,4 +134,42 @@ aside > ul > li > a:hover {
 /* SECTION  */
 section {
   width: 70%;
+}
+
+article, 
+article > header {
+  background-color: var(--body-color);
+}
+
+article {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+article > header {
+  padding: 0;
+  border-bottom: none;
+}
+
+article > footer {
+  padding: 10px 0;
+  
+}
+
+article > footer > a {
+  color: var(--link-color);
+}
+
+article > p {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid var(--bg-color);
+  background-color: var(--body-color);
+  border-radius: 4px;
+  margin: 10px 0;
 }
