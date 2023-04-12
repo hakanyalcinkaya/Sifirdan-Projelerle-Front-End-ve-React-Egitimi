@@ -9,7 +9,7 @@
   --silver: #bdc3c7;
 
   --bg-color: var(--light-white);
-  --text-color: var(--blue);
+  --text-color: var(--midnight-blue);
   --body-color: white;
   --link-color: var(--blue);
   --link-color-hover: var(--dark-blue);
@@ -18,7 +18,7 @@
 :root[data-theme="dark"] {
   --body-color: var(--midnight-blue);
   --bg-color: var(--dark-blue);
-  --text-color: var(--green);
+  --text-color: var(--light-white);
 }
 
 /* RESET: */
@@ -30,6 +30,7 @@
 
 body {
   background-color: var(--body-color);
+  color: var(--text-color);
 }
 /* HELPER */
 .clear-fix {
