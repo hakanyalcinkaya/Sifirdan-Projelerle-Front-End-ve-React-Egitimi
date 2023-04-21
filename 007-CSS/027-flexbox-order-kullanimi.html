@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+    --green: #2ecc71;
+    --blue: #3498db;
+    --yellow: #f1c40f;
+    --red: #e74c3c;
+    --dark-blue: #34495e;
+    --midnight-blue: #2c3e50;
+    --light-white: #ecf0f1;
+    --silver: #bdc3c7;
+    }
+    body {
+      background-color: var(--silver);
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      background-color: var(--light-white);
+      width: 800px;
+      margin: 0 auto;
+      display: flex;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 575px) { 
+      /* Mobile */
+      main {
+        flex-direction: column;
+        width: calc(100% - 60px);
+      }
+      aside {
+        order: 1;
+      }
+    }
+  </style>
+  <title>Flexbox Order Kullanimi</title>
+</head>
+<body>
+  
+  <main class="container">
+    <aside>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="">Lorem.</a></li>
+        <li><a href="">Laudantium.</a></li>
+        <li><a href="">Quos!</a></li>
+        <li><a href="">Recusandae.</a></li>
+        <li><a href="">Sunt?</a></li>
+      </ul>
+    </aside>
+    <section>
+      <aricle>
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, velit.</p>
+        <p>Omnis animi veritatis dolores tenetur asperiores, explicabo earum repellat ratione.</p>
+        <p>Debitis, beatae. Atque possimus quasi nam. Quas quibusdam repellendus adipisci?</p>
+      </aricle>
+      <aricle>
+        <h2>Accusamus, esse.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, maxime!</p>
+        <p>Reprehenderit necessitatibus labore ducimus ab tenetur eligendi doloribus, sapiente asperiores.</p>
+        <p>Sit deserunt magnam ad odio recusandae praesentium eum commodi suscipit.</p>
+      </aricle>
+      <aricle>
+        <h2>Aperiam, possimus.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, porro.</p>
+        <p>Nihil facere placeat vitae cum excepturi esse facilis impedit unde.</p>
+        <p>Debitis quibusdam voluptatum tempora nihil officiis porro vero autem repellendus.</p>
+      </aricle>
+      <aricle>
+        <h2>Quasi, dolores.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, unde?</p>
+        <p>Illo rerum quaerat praesentium cupiditate facere itaque fugit accusamus sequi.</p>
+        <p>Quae recusandae a exercitationem mollitia ad libero rem iste illum!</p>
+      </aricle>
+    </section>
+  </main>
+
+</body>
+</html>
