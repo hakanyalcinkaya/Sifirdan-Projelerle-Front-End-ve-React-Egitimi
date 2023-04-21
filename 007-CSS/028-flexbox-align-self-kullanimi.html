@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --green: #2ecc71;
+      --blue: #3498db;
+      --yellow: #f1c40f;
+      --red: #e74c3c;
+      --dark-blue: #34495e;
+      --midnight-blue: #2c3e50;
+      --light-white: #ecf0f1;
+      --silver: #bdc3c7;
+    }
+    body {
+      background-color: var(--silver);
+      margin: 0;
+    } 
+    .container {
+      background-color: var(--light-white);
+      width: 800px;
+      height: 400px;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    .item {
+      margin: 5px;
+      padding: 5px;
+      background-color: var(--midnight-blue);
+      color: var(--light-white);
+    }
+
+    aside {
+      /* align-self: flex-start; */
+      /* align-self: center; */
+      align-self: flex-end;
+    }
+  </style>
+  <title>Flexbox - Align Self</title>
+</head>
+<body>
+  <div class="container">
+    <aside class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, mollitia.</aside>
+    <div class="item">Ex officiis distinctio accusantium nostrum nam placeat minima. Qui, rem.</div>
+    
+  </div>
+</body>
+</html>
