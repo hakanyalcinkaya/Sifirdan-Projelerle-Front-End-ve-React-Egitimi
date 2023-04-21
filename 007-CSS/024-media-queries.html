@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+    --green: #2ecc71;
+    --blue: #3498db;
+    --yellow: #f1c40f;
+    --red: #e74c3c;
+    --dark-blue: #34495e;
+    --midnight-blue: #2c3e50;
+    --light-white: #ecf0f1;
+    --silver: #bdc3c7;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .box {
+      background-color: var(--yellow);
+      padding: 100px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .clear-fix {
+      clear: both
+    }
+
+    nav > ul > li {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 575px) { 
+      /* Mobile */
+      .box {
+        background-color: var(--red);
+      }
+    }
+
+    /* // Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) { 
+      .box {
+        background-color: var(--blue);
+      }
+
+      nav > ul > li {
+        float: left;
+        margin-bottom: 0;
+      }
+    }
+
+    /* // Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+      .box {
+        background-color: var(--green);
+      }
+    }
+
+    /* // Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      .box {
+        background-color: var(--midnight-blue);
+        color: var(--light-white);
+      }
+    }
+
+    /* // X-Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+      nav {
+        padding: 40px;
+        background-color: var(--blue);
+      }
+     }
+
+    /* // XX-Large devices (larger desktops, 1400px and up) */
+    @media (min-width: 1400px) { 
+
+    }
+  </style>
+  <title>Media Queries</title>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Lorem.</a></li>
+      <li><a href="#">Adipisci.</a></li>
+      <li><a href="#">Facilis?</a></li>
+      <li><a href="#">Perferendis?</a></li>
+      <li><a href="#">Minus.</a></li>
+    </ul>
+  </nav>
+
+  <div class="clear-fix"></div>
+
+  <!-- https://getbootstrap.com/docs/5.3/layout/breakpoints/ -->
+  <h1 id="media-size"></h1>
+  <div class="box">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, enim!
+  </div>
+
+  <script>
+    // Not: Bu bilgiyi su anda bilmediginizi biliyorum :) Panik Yapmayin ;) Ornek icin ekledim ;)
+    const mediaSizeContainer = document.querySelector("#media-size");
+    mediaSizeContainer.innerHTML = document.body.clientWidth;
+
+    addEventListener("resize", (event) => {
+      mediaSizeContainer.innerHTML = document.body.clientWidth;
+    });
+  </script>
+</body>
+</html>
