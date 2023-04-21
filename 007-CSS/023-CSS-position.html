@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --green: #2ecc71;
+      --blue: #3498db;
+      --yellow: #f1c40f;
+      --red: #e74c3c;
+      --dark-blue: #34495e;
+      --midnight-blue: #2c3e50;
+      --light-white: #ecf0f1;
+      --silver: #bdc3c7;
+    } 
+
+    .parent {
+      background-color: var(--red);
+      position: relative;
+    }
+
+    .parent, 
+    .box {
+      padding: 20px;
+    }
+
+    .box-1 {
+      background-color: var(--blue);
+      position: relative;
+      top: -50px;
+      left: 500px;
+    }
+    .box-2 {
+      background-color: var(--green);
+      position: absolute;
+      bottom: 10px;
+      left: -100px;
+      margin-left: 150px;
+      z-index: 1;
+    }
+    .box-3 {
+      background-color: var(--midnight-blue);
+      position: fixed;
+    }
+    .box-4 {
+      background-color: var(--yellow);
+    }
+
+    .navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar > li {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .clear-fix {
+      clear: both;
+    }
+    nav {
+      padding: 20px;
+      border-bottom: 1px solid var(--dark-blue);
+      margin-bottom: 20px;
+      background-color: var(--dark-blue);
+      color: var(--light-white);
+      position:sticky;
+      top: 10px;
+      z-index: 100;
+    }
+  </style>
+  <title>CSS Position</title>
+</head>
+<body>
+
+  <!-- 
+    Live Preview -> Microsoft:
+    https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server
+  -->
+
+  <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/position -->
+  
+
+  <!-- .parent>.box.box-$*4>{box $} -->
+  <div class="parent">
+    <div class="box box-1">box 1</div>
+    <div class="box box-2">box 2</div>
+    <div class="box box-3">box 3</div>
+    <div class="box box-4">box 4</div>
+  </div>
+
+  <div class="container">
+    <article>
+      <h2>article 1</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, tempora!</p>
+      <p>Doloribus, repellendus delectus. Consectetur velit optio itaque, qui cumque amet?</p>
+      <p>Doloremque esse enim necessitatibus autem vero voluptate voluptates qui nemo.</p>
+      <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Quis, at illum?</li>
+        <li>Itaque, odio officia?</li>
+        <li>Magni, quam consequatur!</li>
+        <li>Perferendis, et animi.</li>
+        <li>Accusantium, consectetur mollitia.</li>
+        <li>Cumque, voluptatem sequi?</li>
+        <li>Distinctio, autem consequuntur.</li>
+        <li>Dolore, delectus impedit.</li>
+        <li>Doloremque, dolor incidunt?</li>
+        <li>Sed, aspernatur quisquam?</li>
+        <li>Illo, suscipit sit.</li>
+        <li>Nihil, deserunt consequatur.</li>
+        <li>Vitae, voluptas nam.</li>
+        <li>Eligendi, exercitationem eaque!</li>
+        <li>Rem, id? Laudantium!</li>
+        <li>Sequi, eum nesciunt!</li>
+        <li>Unde, itaque tenetur!</li>
+        <li>Dolorem, deleniti at?</li>
+        <li>Animi, accusantium enim.</li>
+        <li>Modi, dolores a.</li>
+        <li>Ea, odio nesciunt.</li>
+        <li>Tenetur, reiciendis deleniti.</li>
+        <li>Dolore, id voluptates.</li>
+        <li>Assumenda, minus architecto!</li>
+        <li>Sunt, similique doloribus!</li>
+        <li>Molestiae, labore delectus.</li>
+        <li>Soluta, cumque ipsa.</li>
+        <li>Enim, eius eaque!</li>
+        <li>Dolor, consectetur pariatur.</li>
+        <li>Earum, quis et.</li>
+        <li>Dolore, voluptatum unde!</li>
+        <li>Repudiandae, cupiditate vero.</li>
+        <li>Quos, est labore.</li>
+        <li>Fugiat, optio minima!</li>
+        <li>Soluta, delectus veritatis?</li>
+        <li>Ut, iure recusandae!</li>
+        <li>Rerum, placeat natus!</li>
+        <li>Repudiandae, laudantium numquam.</li>
+        <li>A, magni deserunt?</li>
+        <li>Ea, iusto consequatur.</li>
+        <li>Sapiente, dignissimos vel.</li>
+        <li>Ab, error fuga?</li>
+        <li>Assumenda, saepe molestiae?</li>
+        <li>Inventore, maiores dolore.</li>
+        <li>Vel, id voluptatibus.</li>
+        <li>Eos, illo sint.</li>
+        <li>Sit, fugiat nemo.</li>
+        <li>Distinctio, velit alias!</li>
+        <li>Fugit, officiis eos.</li>
+        <li>Accusamus, corrupti ut.</li>
+        <li>Officia, vel totam.</li>
+        <li>Optio, molestiae voluptatibus.</li>
+        <li>Dolorum, quisquam tempora?</li>
+        <li>Consequatur, beatae ut?</li>
+        <li>Facilis, reiciendis? Quisquam.</li>
+        <li>Amet, architecto asperiores!</li>
+        <li>Officiis, provident laudantium?</li>
+        <li>Veritatis, natus quas.</li>
+        <li>Expedita, officiis ipsa.</li>
+        <li>Quo, quam! Nulla?</li>
+        <li>Consequuntur, ex culpa?</li>
+        <li>Cum, impedit unde!</li>
+        <li>Unde, deleniti consequuntur?</li>
+        <li>Debitis, excepturi explicabo.</li>
+        <li>Quo, exercitationem dignissimos.</li>
+        <li>Culpa, incidunt commodi?</li>
+        <li>Atque, ipsa dolor?</li>
+        <li>Laboriosam, itaque nihil.</li>
+        <li>Reprehenderit, cupiditate vero?</li>
+        <li>Nemo, molestiae ipsum.</li>
+        <li>Consequuntur, earum cumque.</li>
+        <li>Placeat, minima modi.</li>
+        <li>Adipisci, amet impedit.</li>
+        <li>Repellat, distinctio deleniti!</li>
+        <li>Beatae, officiis magni!</li>
+        <li>Sint, esse numquam.</li>
+        <li>Dolore, minus itaque?</li>
+        <li>Vitae, vero labore.</li>
+        <li>Blanditiis, minus voluptatem?</li>
+        <li>Aspernatur, porro deserunt!</li>
+        <li>Ex, saepe illum!</li>
+        <li>Harum, facilis consequatur?</li>
+        <li>Consequuntur, dolor corporis!</li>
+        <li>Iure, inventore vitae?</li>
+        <li>Voluptatem, iste. Dolore?</li>
+        <li>Voluptates, iste id!</li>
+        <li>Tempore, eaque excepturi.</li>
+        <li>Aliquam, aut excepturi!</li>
+        <li>Tenetur, similique veniam.</li>
+        <li>Quidem, ex iure?</li>
+        <li>Saepe, enim quod!</li>
+        <li>Molestias, voluptate temporibus.</li>
+        <li>Officia, similique ex!</li>
+        <li>Quo, ipsam officia?</li>
+        <li>Distinctio, et mollitia!</li>
+        <li>Perferendis, saepe excepturi.</li>
+        <li>Impedit, inventore tenetur.</li>
+        <li>Perferendis, iste reiciendis?</li>
+        <li>Nihil, asperiores eligendi!</li>
+      </ul>
+    </article>
+
+  <nav class="">
+    <ul class="navbar">
+      <li>Lorem.</li>
+      <li>Quisquam.</li>
+      <li>Dignissimos?</li>
+      <li>Officia!</li>
+      <li>Eum?</li>
+    </ul>
+    <div class="clear-fix"></div>
+  </nav>
+    <article>
+      <h2>article 2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, qui.</p>
+      <p>Quibusdam cumque atque alias sit inventore in asperiores, sequi sint!</p>
+      <p>Quibusdam harum veniam amet ea animi perferendis voluptas libero voluptatum!</p>
+      <ul>
+        <li>Lorem.</li>
+        <li>Itaque?</li>
+        <li>Similique!</li>
+        <li>Esse?</li>
+        <li>Sapiente.</li>
+        <li>Aspernatur?</li>
+        <li>Perspiciatis.</li>
+        <li>Impedit?</li>
+        <li>Saepe?</li>
+        <li>Eveniet.</li>
+        <li>Tenetur.</li>
+        <li>Blanditiis.</li>
+        <li>Voluptas.</li>
+        <li>Veniam.</li>
+        <li>Laboriosam.</li>
+        <li>Eos?</li>
+        <li>Autem?</li>
+        <li>Dicta.</li>
+        <li>Cupiditate.</li>
+        <li>Repellat.</li>
+        <li>Non!</li>
+        <li>Ex.</li>
+        <li>Laboriosam.</li>
+        <li>Voluptatem.</li>
+        <li>Cum!</li>
+        <li>Similique?</li>
+        <li>Culpa.</li>
+        <li>Est.</li>
+        <li>Veniam!</li>
+        <li>Similique!</li>
+        <li>Natus.</li>
+        <li>Obcaecati.</li>
+        <li>Eveniet!</li>
+        <li>Optio.</li>
+        <li>Tenetur!</li>
+        <li>Blanditiis?</li>
+        <li>Modi!</li>
+        <li>Necessitatibus!</li>
+        <li>Expedita!</li>
+        <li>Quaerat.</li>
+        <li>Porro.</li>
+        <li>Quas.</li>
+        <li>Error.</li>
+        <li>Dolores?</li>
+        <li>Illo?</li>
+        <li>Excepturi?</li>
+        <li>Illo.</li>
+        <li>Sequi.</li>
+        <li>Corrupti.</li>
+        <li>Vero.</li>
+        <li>Architecto.</li>
+        <li>Voluptate.</li>
+        <li>Ratione.</li>
+        <li>Perspiciatis.</li>
+        <li>Molestias.</li>
+        <li>Sit.</li>
+        <li>Laborum.</li>
+        <li>Optio.</li>
+        <li>Ab.</li>
+        <li>Libero?</li>
+        <li>Aspernatur!</li>
+        <li>Quaerat.</li>
+        <li>Quia.</li>
+        <li>Optio?</li>
+        <li>Unde.</li>
+        <li>Voluptatem.</li>
+        <li>Aut?</li>
+        <li>Unde.</li>
+        <li>Numquam.</li>
+        <li>Ut?</li>
+        <li>Voluptatibus.</li>
+        <li>Facilis.</li>
+        <li>Asperiores.</li>
+        <li>Molestiae.</li>
+        <li>Eveniet!</li>
+        <li>Dolores.</li>
+        <li>Hic!</li>
+        <li>Quod.</li>
+        <li>A.</li>
+        <li>Magnam.</li>
+        <li>Atque.</li>
+        <li>Adipisci.</li>
+        <li>Aspernatur.</li>
+        <li>Necessitatibus?</li>
+        <li>Odit.</li>
+        <li>Maiores.</li>
+        <li>Ut.</li>
+        <li>Numquam?</li>
+        <li>Rerum.</li>
+        <li>Fugiat.</li>
+        <li>Minima?</li>
+        <li>Odit?</li>
+        <li>Quidem?</li>
+        <li>Porro.</li>
+        <li>Totam?</li>
+        <li>Maiores.</li>
+        <li>Aliquam!</li>
+        <li>Nisi.</li>
+        <li>Deserunt.</li>
+        <li>Quibusdam.</li>
+      </ul>
+    </article>
+    <article>
+      <h2>article 3</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit.</p>
+      <p>Facere pariatur, adipisci recusandae deleniti veritatis perferendis! Fuga, nesciunt dolore?</p>
+      <p>Nam quae laborum non, debitis totam perferendis quisquam ab eius.</p>
+    </article>
+    <article>
+      <h2>article 4</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, ipsum.</p>
+      <p>Alias, perferendis ipsum. Beatae, est esse perspiciatis dolore quia eos.</p>
+      <p>Explicabo deleniti ab sapiente quaerat odio libero cumque accusantium! Temporibus.</p>
+    </article>
+    <article>
+      <h2>article 5</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, itaque.</p>
+      <p>Voluptatibus voluptate architecto sint rerum possimus nemo quia quibusdam ratione.</p>
+      <p>Tempore, commodi vel laborum minima rem hic distinctio veniam cumque.</p>
+    </article>
+  </div>
+</body>
+</html>
