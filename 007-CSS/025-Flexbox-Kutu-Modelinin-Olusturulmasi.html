@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+    --green: #2ecc71;
+    --blue: #3498db;
+    --yellow: #f1c40f;
+    --red: #e74c3c;
+    --dark-blue: #34495e;
+    --midnight-blue: #2c3e50;
+    --light-white: #ecf0f1;
+    --silver: #bdc3c7;
+    }
+    body {
+      background-color: var(--silver);
+      margin: 0;
+      padding: 0;
+    }
+    .flex-container {
+      width: 800px;
+      margin: auto;
+      background-color: var(--light-white);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item {
+      background-color: var(--yellow);
+      margin: 10px;
+    }
+
+    nav {
+      background-color: var(--light-white);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      background-color: var(--green);
+      margin: 0 auto;
+      width: 800px;
+      display: flex;
+      list-style-type: none;
+      /* justify-content: flex-end; */
+      justify-content: space-between;
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+    }
+
+    ul > li {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background-color: var(--light-white);
+      border-radius: 20px;
+      width: 600px;
+    }
+
+    .login > input, 
+    .login > button {
+      margin-bottom: 10px;
+      padding: 5px 10px;
+    }
+  </style>
+  <title>FlexBox</title>
+</head>
+<body>
+  <!-- 
+    Oyun Oynayarak FlexBox Ogrenelim :)
+    https://flexboxfroggy.com/
+  -->
+  <!-- 
+    MDN: 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox -->
+  <!-- 
+    A Complete Guide to Flexbox
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  -->
+
+  <!-- <nav>
+    <ul>
+      <li>item-1</li>
+      <li>item-2</li>
+      <li>item-3</li>
+      <li>item-4</li>
+      <li>item-5</li>
+      <li>item-6</li>
+      <li>item-7</li>
+      <li>item-8</li>
+      <li>item-9</li>
+      <li>item-10</li>
+    </ul>
+  </nav>
+
+
+  <div class="flex-container">
+    <div class="item">Lorem.</div>
+    <div class="item">Est!</div>
+    <div class="item">Quae.</div>
+    <div class="item">Nobis.</div>
+  </div> -->
+
+
+  <div class="container">
+    <div class="login">
+      <h2>Login:</h2>
+      <input type="text" placeholder="username">
+      <input type="password" placeholder="password">
+      <button type="submit">Giris Yap</button>
+      <hr>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, nesciunt aspernatur. Repudiandae labore aperiam eius neque porro sapiente! Unde, sequi?</p>
+      <p>Facere aperiam, aspernatur impedit, inventore nisi, perspiciatis cum ea reprehenderit maiores possimus quas eligendi quo in? Officiis eius inventore qui?</p>
+      <p>Impedit hic iusto voluptatibus numquam alias nemo praesentium tempora amet maxime, ullam totam laborum molestiae architecto quis corporis ad ipsam.</p>
+    </div>
+  </div>
+  
+</body>
+</html>
