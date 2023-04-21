@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+    --green: #2ecc71;
+    --blue: #3498db;
+    --yellow: #f1c40f;
+    --red: #e74c3c;
+    --dark-blue: #34495e;
+    --midnight-blue: #2c3e50;
+    --light-white: #ecf0f1;
+    --silver: #bdc3c7;
+    }
+    body {
+      background-color: var(--silver);
+      margin: 0;
+      padding: 0;
+    }
+    .flex-container {
+      
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .item {
+      background: var(--dark-blue);
+      color: var(--light-white);
+    }
+
+    .item > nav > ul {
+      padding: 20px;
+      margin: 0;
+      display: flex;
+      list-style-type: none;
+      justify-content: flex-end;
+    }
+    .item > nav > ul > li {
+      margin-right: 10px;
+    }
+
+    .google {
+      text-align: center;
+      width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .footer {
+      padding: 20px;
+    }
+    .footer > div {
+      padding: 10px 0;
+      
+    }
+    .footer-nav {
+      
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer-nav ul {
+      padding: 0;
+      display: flex;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    .footer-nav ul li {
+      margin-right: 10px;
+    }
+    .bt-1 {
+      border-bottom: 1px solid var(--blue);
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    input {
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+  </style>
+  <title>Flexbox-Google-Layout</title>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item">
+      <nav>
+        <ul>
+          <li>Gmail</li>
+          <li>Images</li>
+          <li>Obcaecati!</li>
+          <li>Aperiam.</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="item">
+      <div class="google">
+        <h1>Google</h1>
+        <input type="text" placeholder="Search..">
+      </div>
+    </div>
+    <div class="item footer">
+      <div class="bt-1">
+        Türkiye
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li>Lorem.</li>
+          <li>Omnis.</li>
+          <li>Veritatis!</li>
+          <li>Quae?</li>
+        </ul>
+        <ul>
+          <li>Lorem.</li>
+          <li>Perspiciatis!</li>
+          <li>Architecto.</li>
+          <li>Similique?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
