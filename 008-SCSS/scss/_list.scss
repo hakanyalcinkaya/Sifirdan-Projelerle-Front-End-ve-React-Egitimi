@@ -1,9 +1,9 @@
 $sizes: 0 5 10 15 20;
 $images: ("https://picsum.photos/id/1/100/100", "https://picsum.photos/id/27/200/300");
 
-.mt-#{nth($sizes, 1)} {
-  margin-top: #{nth($sizes, 1)}px;
-}
+// .mt-#{nth($sizes, 1)} {
+//   margin-top: #{nth($sizes, 1)}px;
+// }
 
 .box {
   background-image: url(#{nth($images, 1)});
