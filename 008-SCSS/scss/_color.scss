@@ -1,0 +1,19 @@
+$emerald: #2ecc71;
+
+$darken-emerald: darken($emerald, 10%);
+$lighten-emerald: lighten($emerald, 30%);
+
+.base-color {
+  padding: 20px;
+  background-color: $emerald;
+}
+
+.darken-color {
+  @extend .base-color;
+  background-color: $darken-emerald;
+}
+
+.lighter-color {
+  @extend .base-color;
+  background-color: $lighten-emerald;
+}
