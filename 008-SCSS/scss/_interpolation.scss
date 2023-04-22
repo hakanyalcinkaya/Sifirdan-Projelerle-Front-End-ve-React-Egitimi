@@ -1,0 +1,10 @@
+@mixin make-icon($name, $font-size: 16px) {
+  .icon-#{$name} {
+    background-image: url("/assets/icons/#{$name}.svg");
+    font-size: $font-size;
+  }
+}
+
+@include make-icon(home, 12px);
+@include make-icon(left-arrow, 14px);
+@include make-icon(right-arrow, 16px);
