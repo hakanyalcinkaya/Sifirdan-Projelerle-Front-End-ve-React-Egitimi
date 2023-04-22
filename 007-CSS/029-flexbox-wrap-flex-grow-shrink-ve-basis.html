@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #e0e0e0;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background-color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .card {
+      box-sizing: border-box;
+      padding: 10px 5px;
+      border-radius: 4px;
+      border: 1px solid #e0e0e0;
+      /* margin-bottom: 10px; */
+      /* margin-: 10px; */
+      flex: 1 300px;
+      /* flex-grow: 1; */
+      /* flex-basis: 150px; */
+    }
+    
+    .big-card {
+      flex: 4 600px;
+      order: -1;
+      /* flex-grow: 4; */
+      /* flex-basis: 450px; */
+    }
+
+    .card > img {
+      box-sizing: border-box;
+      width: 100%;
+      background-color: #fff;
+      padding: 4px;
+      border-radius: 4px;
+      border: 1px solid #e0e0e0;
+    }
+
+  </style>
+  <title>Flexbox wrap - grow-shrink-basis</title>
+</head>
+<body>
+  <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+  <!-- https://box-shadow.dev/ -->
+  <!-- https://picsum.photos/ -->
+  <!-- .container>.card*4>img[src="https://picsum.photos/id/23$/500/300"]+h2>lorem3^p*2>lorem10 -->
+  <div class="container">
+    <div class="card big-card">
+      <img src="https://picsum.photos/id/231/500/300" alt="">
+      <h2>BIG: Lorem, ipsum dolor.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, consequuntur.</p>
+      <p>Nesciunt aliquid architecto enim nulla, tempore pariatur assumenda voluptates. Rem?</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/id/232/500/300" alt="">
+      <h2>Exercitationem, tempora libero!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, illo.</p>
+      <p>Delectus tempore culpa fuga magnam minus, quasi atque. Laborum, voluptas.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/id/233/500/300" alt="">
+      <h2>Molestias, corrupti sed?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dicta.</p>
+      <p>Iste magnam mollitia quasi voluptatem a pariatur repudiandae voluptatibus animi.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/id/234/500/300" alt="">
+      <h2>Veniam, quas deserunt.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quidem!</p>
+      <p>Fuga maiores eum inventore illo sapiente explicabo! Corrupti, repudiandae quas.</p>
+    </div>
+  </div>
+
+
+</body>
+</html>
