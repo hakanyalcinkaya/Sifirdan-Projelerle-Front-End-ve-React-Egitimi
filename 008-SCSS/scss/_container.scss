@@ -1,0 +1,10 @@
+.info {
+  // $bg-color: red !global;
+  background-color: $bg-color;
+}
+
+.container {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding-10;
+}

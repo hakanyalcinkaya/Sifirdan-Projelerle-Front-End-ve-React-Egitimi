@@ -1,12 +1,48 @@
 @import 'variables';
+@import 'base';
+@import 'nav';
+@import 'container';
+@import 'parent_selector__btn';
 
-.info {
-  // $bg-color: red !global;
-  background-color: $bg-color;
-}
+// body {
+//   margin: 0;
+//   padding: 0;
+// }
 
-.container {
-  background-color: $bg-color;
-  color: $text-color;
-  padding: $padding-10;
-}
+// .info {
+//   // $bg-color: red !global;
+//   background-color: $bg-color;
+// }
+
+// .container {
+//   background-color: $bg-color;
+//   color: $text-color;
+//   padding: $padding-10;
+// }
+
+// nav {
+//   background-color: $bg-color;
+//   margin-bottom: 20px;
+//   padding: 15px 5px;
+
+//   & > ul {
+//     margin: 0;
+//     display: flex;
+//     list-style-type: none;
+//     gap: 10px;
+
+//     & > li {
+
+//       & > a {
+//         text-decoration: none;
+//         color: $text-color;
+
+//         &:hover {
+//           color: $primary-color;
+//         }
+
+//       }
+//     }
+//   }
+// }
+

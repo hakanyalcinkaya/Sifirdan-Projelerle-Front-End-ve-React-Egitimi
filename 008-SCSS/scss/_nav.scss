@@ -1,0 +1,25 @@
+nav {
+  background-color: $bg-color;
+  margin-bottom: 20px;
+  padding: 15px 5px;
+
+  & > ul {
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+
+    & > li {
+      & > a {
+        text-decoration: none;
+        color: $text-color;
+
+        &:hover {
+          color: $primary-color;
+        }
+
+      }
+    }
+  }
+}
+

@@ -1,0 +1,20 @@
+.btn {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 7px 12px;
+  border: 1px solid #D5D5D5;
+  background-image: linear-gradient(#EEE, #DDD);
+  font: 700 13px/18px Helvetica, arial;
+
+  &:hover {
+    color: red
+  }
+  &--state-success {
+    color: #FFF;
+    background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
+    border-color: #4A993E;
+  }
+  &--state-danger {
+    color: #900;
+  }
+}
