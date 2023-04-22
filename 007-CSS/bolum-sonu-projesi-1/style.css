@@ -1,0 +1,174 @@
+/* - Mobile: 375px
+- Desktop: 1440px 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--off-white);
+  margin: 0;
+  padding: 0;
+}
+/*  BASE End */
+
+/* HELPER */
+.w-100 {
+  width: 100%;
+}
+.bt-none {
+  border-bottom: none !important;
+}
+/* HELPER End */
+
+/* NAV */
+nav, 
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+nav {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+ 
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+/* NAV End */
+
+.container {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.container > section {
+  flex: 2;
+}
+
+
+.info {
+  display: flex;
+  gap: 50px;
+}
+
+.info h1 {
+  font-size: 4rem;
+  margin: 20px 0 0;
+}
+
+.info > .item {
+  flex: 1;
+}
+
+.item-detail {
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin-top: 20px;
+  /* justify-content: space-around; */
+}
+
+.item-detail > a.btn {
+  margin-top: 40px;
+  padding: 15px 40px;
+  background-color: var(--soft-red);
+  display: inline-block;
+  color: var(--off-white);
+}
+
+/* ASIDE */
+
+.container > aside {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--very-dark-blue);
+}
+
+.container > aside > h2 {
+  color: var(--soft-orange);
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+aside > .item {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+aside > .item > h3 {
+  color: var(--off-white);
+}
+
+aside > .item > p {
+  color: var(--grayish-blue);
+}
+
+/* ASIDE End */
+
+/* FOOTER */
+footer.container {
+  gap: 0
+}
+
+footer.container > .item {
+  flex: 1;
+  /* background-color: red; */
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+footer.container > .item > img {
+  width: 100px;
+  max-height: 120px;
+  /* flex: 1 ; */
+}
+
+footer.container > .item > div { 
+  flex: 2;
+  padding: 0 20px;
+}
+
+footer.container > .item h3 {
+  margin: 0;
+  color: var(--grayish-blue);
+}
+
+footer.container > .item h4 {
+  margin: 10px 0 0;
+}
+
+footer.container > .item p {
+  color: var(--very-dark-blue);
+}
+/* FOOTER End */
