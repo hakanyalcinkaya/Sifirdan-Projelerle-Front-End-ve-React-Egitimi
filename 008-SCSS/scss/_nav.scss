@@ -1,5 +1,8 @@
+// @import 'mixin__card';
+
 nav {
   background-color: $bg-color;
+  // @include card_mixin_v2(#f1c40f);
   margin-bottom: 20px;
   padding: 15px 5px;
 
