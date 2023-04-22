@@ -69,4 +69,7 @@ sketch
 .history
 .ionide
 
+# 008 - SCSS 
+008-SCSS/css
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,react
