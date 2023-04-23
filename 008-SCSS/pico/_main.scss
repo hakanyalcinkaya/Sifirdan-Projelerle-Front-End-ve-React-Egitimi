@@ -1,0 +1,9 @@
+/* MAIN */
+main {
+  width: var(--box-size);
+  margin: 0 auto 30px;
+  /* min-height: 800px; */
+  border: 1px solid var(--silver);
+  border-radius: 4px;
+  padding: 20px;
+}

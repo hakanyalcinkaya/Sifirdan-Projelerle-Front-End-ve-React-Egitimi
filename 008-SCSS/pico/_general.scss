@@ -1,0 +1,17 @@
+/* GENERAL */
+header, 
+main {
+  background-color: var(--bg-color);
+  min-height: 20px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid var(--bg-color);
+  background-color: var(--body-color);
+  border-radius: 4px;
+  margin: 10px 0;
+}
