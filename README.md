@@ -1,4 +1,4 @@
-# Sıfırdan Projelerle Yeni Nesil Front-End ve React Eğitimi
+# Sıfırdan Projelerle Front-End ve React Eğitimi
 
 İlerleme Durumu : ![65%](https://progress-bar.dev/65)
 
@@ -28,7 +28,5 @@ Bu Eğitim için hazırlayacağım ek video içeriklerin dışında şimdilik be
 - [ ] Front-End Developer'lar için Gerekli Olan Araçlar
 - [ ] Yazılımcılar için Koltuk Ayarı :) ( Sürpriz  ;) )
 - [ ] ve Diğer İlginç İçerikler :)
-
-Eğitim içerisinde bulunması gerektiğini düşündüğünüz içerikleri / konuları [hakanyalcinkaya@gmail.com](hakanyalcinkaya@gmail.com) adresinden bana iletebilirsiniz.
 
 Ayrıca eğitim içeriğinin hazırlanması / yayına alınması ile ilgili ilerleme durumunu yukarda görebilirsiniz ;)
