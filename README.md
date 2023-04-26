@@ -1,6 +1,6 @@
 # Sıfırdan Projelerle Yeni Nesil Front-End ve React Eğitimi
 
-İlerleme Durumu : ![55%](https://progress-bar.dev/55)
+İlerleme Durumu : ![65%](https://progress-bar.dev/65)
 
 ## "Hello, World!" :)
 React Eğitimi hazırlamam için gelen baskılarından dolayı Udemy'de Platformunda yayınlanmak üzere eğitim hazırlamaya karar verdim.
@@ -17,7 +17,7 @@ Bu Eğitim için hazırlayacağım ek video içeriklerin dışında şimdilik be
 - [x] Git, GitHub ve Markdown Kullanimi
 - [X] CSS
 - [x] SCSS
-- [ ] Bootstrap 5
+- [x] Bootstrap 5
 - [ ] JavaScript
 - [ ] React
 - [ ] Context API
