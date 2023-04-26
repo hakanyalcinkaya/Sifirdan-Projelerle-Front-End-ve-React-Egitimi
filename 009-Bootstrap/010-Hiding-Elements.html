@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <title>Hiding Elemens</title>
+</head>
+<body>
+  <!-- Not: Bir Onceki Videoda islenen bilgi Margin ve Padding icin Dokuman Olusturulmadi.. -->
+  <!-- https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding -->
+  
+  <!-- .container>.row>.col-sm-12>h1.bg-*6>{Hosgeldin $} -->
+  <!-- https://getbootstrap.com/docs/5.3/utilities/display/#hiding-elements -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="bg-success d-block d-sm-none">Hosgeldin Mobile - 1</h1>
+        <h1 class="bg-info d-none d-sm-block d-md-none">Hosgeldin SM - 2</h1>
+        <h1 class="bg-warning d-none d-md-block d-lg-none">Hosgeldin MD - 3</h1>
+        <h1 class="bg-danger d-none d-lg-block d-xl-none">Hosgeldin LG - 4</h1>
+        <h1 class="bg-success-subtle d-none d-xl-block d-xxl-none">Hosgeldin XL - 5</h1>
+        <h1 class="bg-primary d-none d-xxl-block">Hosgeldin XXL - 6</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- main.container>.row>aside.col-sm-3>ul>li*5>a>lorem1^^^^section.col-sm-9>article*3>h2>{Article $}^p*3>lorem10 -->
+  <main class="container mt-5">
+    <div class="row">
+      <aside class="col-sm-3 d-none d-sm-block bg-light p-3">
+        <ul>
+          <li><a href="">Lorem.</a></li>
+          <li><a href="">Eveniet?</a></li>
+          <li><a href="">Sint!</a></li>
+          <li><a href="">Nostrum.</a></li>
+          <li><a href="">Iusto?</a></li>
+        </ul>
+      </aside>
+      <section class="col-sm-9">
+        <article>
+          <h2>Article 1</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nesciunt!</p>
+          <p>Vero, ea dignissimos! Nesciunt voluptatum nobis velit. Iste, a unde.</p>
+          <p>Laboriosam sint ducimus minima quaerat officiis, voluptatum dicta ut consequatur.</p>
+        </article>
+        <article>
+          <h2>Article 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, possimus!</p>
+          <p>Perferendis commodi, possimus nihil optio omnis illum! Maiores, quasi dignissimos!</p>
+          <p>Porro, pariatur? Consequatur, quod blanditiis. Molestias repellendus sapiente perspiciatis ducimus.</p>
+        </article>
+        <article>
+          <h2>Article 3</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quia!</p>
+          <p>Nobis ea incidunt placeat sed neque corrupti fugit soluta! Sequi!</p>
+          <p>Odit magni quas adipisci perspiciatis numquam at tempore, distinctio quod?</p>
+        </article>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
