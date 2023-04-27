@@ -1,4 +1,5 @@
 # Sıfırdan Projelerle Front-End ve React Eğitimi
+![Udemy - Sıfırdan Projelerle React Öğren](https://github.com/hakanyalcinkaya/hakanyalcinkaya/blob/main/assets/img/udemy-react-v1.jpg)
 
 İlerleme Durumu : ![65%](https://progress-bar.dev/65)
 
