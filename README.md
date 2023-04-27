@@ -27,7 +27,5 @@ Bu Eğitim için hazırlayacağım ek video içeriklerin dışında şimdilik be
 - [ ] Firebase
 - [ ] Test
 - [ ] Front-End Developer'lar için Gerekli Olan Araçlar
-- [ ] Yazılımcılar için Koltuk Ayarı :) ( Sürpriz  ;) )
-- [ ] ve Diğer İlginç İçerikler :)
 
 Ayrıca eğitim içeriğinin hazırlanması / yayına alınması ile ilgili ilerleme durumunu yukarda görebilirsiniz ;)
