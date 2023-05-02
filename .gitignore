@@ -72,4 +72,7 @@ sketch
 # 008 - SCSS 
 008-SCSS/css
 
+# Bootstrap Bolum Sonu Projesi 2
+009-Bootstrap/bolum-sonu-calismasi-2/img/
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,react
