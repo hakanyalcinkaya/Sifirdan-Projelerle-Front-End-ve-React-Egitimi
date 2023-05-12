@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    nav {
+      padding: 10px;
+      background: #bdc3c7;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+
+    ul.menu {
+      display: flex;
+      position: relative;
+    }
+
+    ul.menu > li {
+      margin-right: 10px;
+    }
+    .dropdown-menu {
+      position:fixed;
+      display: none;
+      background-color: #bdc3c7;
+      padding: 5px 10px;
+    }
+    .open {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li>Ana Sayfa</li>
+      <li class="dropdown">Kategori 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg>
+       <ul class="dropdown-menu">
+        <li>Bilgisayar</li>
+        <li>Telefon</li>
+        <li>Ekran</li>
+       </ul>
+      </li>
+      <li>Iletisim</li>
+    </ul>
+  </nav>
+
+  <!-- section>article*5>h2>lorem4^p*3>lorem10^hr -->
+  <section>
+    <article>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, reprehenderit.</p>
+      <p>Odit, culpa repellendus! Dolorem, illum? Eveniet eum molestiae voluptate corrupti!</p>
+      <p>Nisi officiis itaque libero veniam architecto, aperiam odit quasi fugiat!</p>
+      <hr>
+    </article>
+    <article>
+      <h2>Culpa voluptate ex laudantium!</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facere.</p>
+      <p>Veritatis incidunt deleniti, illum numquam in beatae laboriosam cum! Labore.</p>
+      <p>Sit fuga repudiandae itaque accusantium voluptatum officiis soluta quisquam nesciunt!</p>
+      <hr>
+    </article>
+    <article>
+      <h2>Distinctio laudantium laboriosam enim.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dignissimos.</p>
+      <p>Adipisci ratione molestiae ipsum nihil aliquam laborum ullam porro dicta?</p>
+      <p>Tempora deleniti autem ratione quam pariatur dolore consectetur consequatur provident.</p>
+      <hr>
+    </article>
+    <article>
+      <h2>Excepturi veritatis asperiores laboriosam.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, ipsam.</p>
+      <p>Blanditiis minima in deleniti dolor, quisquam soluta et libero inventore.</p>
+      <p>Consequuntur quasi nam sapiente reprehenderit, ullam libero enim odit quam!</p>
+      <hr>
+    </article>
+    <article>
+      <h2>Esse consequuntur illo fugit.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, molestiae.</p>
+      <p>Quia natus in ratione qui explicabo quam hic amet ipsam!</p>
+      <p>Dolorum fugiat veniam enim! Ipsa doloribus quas repudiandae autem fugit.</p>
+      <hr>
+    </article>
+  </section>
+
+  <script>
+    const categoryElement = document.querySelector('.dropdown') 
+    categoryElement.addEventListener('click', () => {
+      const dropDown = document.querySelector('ul.dropdown-menu')
+      dropDown.classList.toggle('open')
+    })
+  </script>
+  
+</body>
+</html>
