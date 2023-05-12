@@ -1,6 +1,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseout_event
+// https://www.javatpoint.com/javascript-events
 
 const btn = document.querySelector('button#hideTitle')
 
