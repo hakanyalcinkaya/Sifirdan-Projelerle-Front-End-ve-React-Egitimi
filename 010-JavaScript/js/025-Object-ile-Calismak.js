@@ -39,9 +39,9 @@ console.log(person)
 console.log(person.fullName())
 console.log(person.fullNameV2())
 
-console.log(Object.keys(person))
-console.log(Object.values(person))
-console.log(Object.entries(person))
+console.log(Object.keys(person)) // sadece key bilgileri
+console.log(Object.values(person)) // sadece value bilgileri
+console.log(Object.entries(person)) // key ve value bilgileri birlikte array icerisinde
 
 const product = {
   isInStock: false,
