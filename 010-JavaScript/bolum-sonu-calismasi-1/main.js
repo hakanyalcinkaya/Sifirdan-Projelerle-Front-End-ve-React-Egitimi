@@ -31,4 +31,18 @@ hexInputContainer.append( newHexColorInput(counter) )
 
 hexForm.addEventListener("submit", (event) => {
   event.preventDefault()
+
+  let localStorageColors = localStorage.getItem("colors") ? JSON.parse(localStorage.getItem("colors")) : []
+  // console.log(typeof(localStorageColors))
+
+  let colors = []
+  Array.from(event.target.elements).forEach(item => {
+    if (item.type === "text") {
+      colors.push(item.value)
+    }
+  })
+  localStorageColors.push(colors)
+  
+  localStorage.setItem("colors", JSON.stringify(localStorageColors))
+  hexForm.reset()
 })
