@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>localStorage ile Calismak</title>
+</head>
+<body>
+  
+  <input type="color" name="color" id="color">
+  <button id="save">Kaydet</button>
+  <button id="show">Bilgiyi Goster</button>
+
+  <script>
+    const btn = document.querySelector("#save")
+    btn.addEventListener("click", () => {
+      const colorInputElement = document.querySelector("#color")
+      console.log(colorInputElement.value)
+      localStorage.setItem("bgColor", colorInputElement.value)
+    })
+    const showBtn = document.querySelector("#show")
+    showBtn.addEventListener("click", () => {
+      const colorInputElement = document.querySelector("#color")
+      const bgColorValue = localStorage.getItem("bgColor")
+      console.log(bgColorValue)
+      colorInputElement.value = bgColorValue;
+      document.body.style.backgroundColor = bgColorValue;
+    })
+
+    // Local Storage icerisindeki Bilgiyi Silmek
+    // localStorage.removeItem("bgColor")
+  </script>
+</body>
+</html>
