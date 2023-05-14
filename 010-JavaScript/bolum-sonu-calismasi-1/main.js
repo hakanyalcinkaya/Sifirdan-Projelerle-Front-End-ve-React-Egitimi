@@ -29,11 +29,10 @@ function newHexColorInput(itemCount) {
 
 hexInputContainer.append( newHexColorInput(counter) )
 
+let localStorageColors = localStorage.getItem("colors") ? JSON.parse(localStorage.getItem("colors")) : []
+
 hexForm.addEventListener("submit", (event) => {
   event.preventDefault()
-
-  let localStorageColors = localStorage.getItem("colors") ? JSON.parse(localStorage.getItem("colors")) : []
-  // console.log(typeof(localStorageColors))
 
   let colors = []
   Array.from(event.target.elements).forEach(item => {
@@ -46,3 +45,29 @@ hexForm.addEventListener("submit", (event) => {
   localStorage.setItem("colors", JSON.stringify(localStorageColors))
   hexForm.reset()
 })
+
+const colorCards = document.querySelector("#colorCards")
+
+if (localStorageColors.length) {
+  const colors = ["#1abc9c", "#2ecc71", "#3498db"]
+  localStorageColors.forEach(colors => {
+    console.log(colors)
+    colorCards.append(
+      addColorPalette(colors)
+    )
+  })
+}
+
+function addColorPalette(items) {
+  const rowElement = document.createElement('div')
+  rowElement.classList.add('row', 'gap-3', 'my-3')
+
+  items.forEach(item => {
+    const cardItem = document.createElement('div')
+    cardItem.classList.add('col-sm', 'card')
+    cardItem.style.backgroundColor = item
+    rowElement.append(cardItem)
+  })
+  
+  return rowElement;
+}
