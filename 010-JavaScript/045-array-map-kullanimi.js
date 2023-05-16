@@ -58,3 +58,9 @@ const filteredValidUsers = users.filter(item => item.search('@') > 0 ? true : fa
 })
 
 console.log("filteredValidUsers", filteredValidUsers)
+
+// 100 Adet li item nasil olusturulur?
+// Bonus Bilgi: React'ta Isimize Yarayacak ;)
+
+const newLiItems = [...Array(100)].map((emptyItem, index) => `<li>Item ${index +1}</li>`)
+console.log(newLiItems)
