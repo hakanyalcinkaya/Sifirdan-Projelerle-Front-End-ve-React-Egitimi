@@ -1,0 +1,6 @@
+{
+  "user": "username",
+  "info": 1234234,
+  "arr": [{"i": 1, "k": 2}],
+  "isActive": true
+}
