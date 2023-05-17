@@ -23,3 +23,8 @@ Vite ile Proje Olusturmak Icin Terminal'de:
 npm create vite@latest
 */
 ```
+
+## Genel Bilgiler
+- [Component Import ve Export Kullanimlari](https://react.dev/learn/importing-and-exporting-components)
+- [JSX Kullanimi](https://react.dev/learn/writing-markup-with-jsx)
+- [JSX ile Birlikte SusluParantez Kullanimi](https://react.dev/learn/javascript-in-jsx-with-curly-braces)
