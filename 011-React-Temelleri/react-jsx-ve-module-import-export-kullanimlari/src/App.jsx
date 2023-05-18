@@ -8,6 +8,7 @@ import HebeleUserList, {SingleUser, ITEMS} from "./components/UserList"
 import ButtonComponent from "./components/Button"
 import ImgThumbnail from "./components/ImgThumbnail"
 import { IMAGES } from "./data"
+import Card from "./components/Card"
 
 function App() {
   // 1: return ederkenken HTML Yapisi Return Etmen Gerekiyor (JSX)
@@ -92,6 +93,27 @@ function App() {
       {
         IMAGES.map((item, index) => <ImgThumbnail imgSrc={item} key={index} imgAlt="" />)
       }
+      <hr />
+
+      <Card 
+        title="Lorem Ipsum Dolor" 
+        imgSrc="https://picsum.photos/id/11/400/250" 
+        imgAlt="Card Alt Bilgisi - Children Yok"
+      />
+
+      <hr />
+
+      {/* Not: Eger bir component icine bilgi etiket olarak gonderilirse aslinda props.children olarak kulllaniliyor.. Bu bilgiler React Component'i icine children olarak gidiyor.. */}
+      <Card 
+        title="Lorem Ipsum Dolor" 
+        imgSrc="https://picsum.photos/400/250" 
+        imgAlt="Card Alt Bilgisi"
+        dataId="111"
+      >
+        <p>Lorem, ipsum dolor.</p>
+        <p>Aliquam, laborum quis.</p>
+        <p>Iusto, voluptate aspernatur.</p>
+      </Card>
   </>)
 }
 
