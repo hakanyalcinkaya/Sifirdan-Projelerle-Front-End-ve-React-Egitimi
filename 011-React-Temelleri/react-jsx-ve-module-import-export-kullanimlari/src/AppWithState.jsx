@@ -1,6 +1,6 @@
 import Counter from "./components/Counter";
 import MultipleImages from "./components/MultipleImages";
-
+import CardWithState from "./components/CardWithState"
 
 // useState => durum bilgisi ve durum bilgisini degistirecek fonksiyon
 
@@ -12,6 +12,11 @@ export default function AppWithState() {
     <Counter />
     <hr />
     <MultipleImages />
+    <hr />
+    <CardWithState />
+    <CardWithState />
+    <CardWithState />
+    <CardWithState />
     </>
   )
 
