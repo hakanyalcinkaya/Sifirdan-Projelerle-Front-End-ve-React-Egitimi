@@ -1,5 +1,13 @@
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+// https://react.dev/learn/importing-and-exporting-components
 import React from "react"
 import './App.css'
+// import UserList, {SingleUser, ITEMS} from "./components/UserList"
+import HebeleUserList, {SingleUser, ITEMS} from "./components/UserList"
+// import Button from "./components/Button"
+import ButtonComponent from "./components/Button"
+import ImgThumbnail from "./components/ImgThumbnail"
+import { IMAGES } from "./data"
 
 function App() {
   // 1: return ederkenken HTML Yapisi Return Etmen Gerekiyor (JSX)
@@ -67,13 +75,29 @@ function App() {
         )
       }
     </ul>
-    <ImgThumbnail />
+    {/* <ImgThumbnail /> */}
+    <HebeleUserList />
+    <SingleUser />
+    <SingleUser />
+    {/* 10 Adet Single User Component Nasil Olusturulur? */}
+    {[...Array(10)].map((item, index) => <SingleUser key={index} />)}
+    {ITEMS.map((item, index) => <span key={index}>{item}</span>)}
+    <hr />
+      <span btn="info" data="1111">normal html component</span>
+    <hr />
+    <ButtonComponent className="btn btn-primary" info="deneme" dataId="1" />
+    <hr />
+    <ImgThumbnail imgSrc="https://picsum.photos/600/250" />
+    <hr />
+      {
+        IMAGES.map((item, index) => <ImgThumbnail imgSrc={item} key={index} imgAlt="" />)
+      }
   </>)
 }
 
-// Yeni Component
-function ImgThumbnail() {
-  return <img src="https://picsum.photos/600/250" alt="" style={{padding: "4px", borderRadius: "8px", border: "1px solid #bdc3c7"}} />
-}
+// // Yeni Component
+// function ImgThumbnail() {
+//   return <img src="https://picsum.photos/600/250" alt="" style={{padding: "4px", borderRadius: "8px", border: "1px solid #bdc3c7"}} />
+// }
 
 export default App
