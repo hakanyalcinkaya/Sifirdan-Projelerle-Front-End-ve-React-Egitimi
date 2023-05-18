@@ -7,7 +7,7 @@ import HebeleUserList, {SingleUser, ITEMS} from "./components/UserList"
 // import Button from "./components/Button"
 import ButtonComponent from "./components/Button"
 import ImgThumbnail from "./components/ImgThumbnail"
-import { IMAGES } from "./data"
+import { IMAGES, INFO } from "./data"
 import Card from "./components/Card"
 import ConditionalRenderedUserList from "./components/ConditionalRenderedUserList"
 
@@ -117,6 +117,25 @@ function App() {
       </Card>
       <hr />
       <ConditionalRenderedUserList isActive={true} isLoading={true} />
+      <hr />
+      
+      {/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining */}
+      <h2>Optional Chaning</h2>
+      <p>Not: INFO icindeki Products bilgisi aslinda yok..</p>
+      {/* 
+      {
+          INFO.productzzzzzzzz?.map(
+            (product, index) => <li key={index}>{product}</li>
+          )
+        }
+      
+      */}
+      {
+        INFO.products?.map(
+          (product, index) => <li key={index}>{product}</li>
+        )
+      }
+      
       <hr />
   </>)
 }
