@@ -1,7 +1,7 @@
 # Sıfırdan Projelerle Front-End ve React Eğitimi
 ![Udemy - Sıfırdan Projelerle React Öğren](https://github.com/hakanyalcinkaya/hakanyalcinkaya/blob/main/assets/img/udemy-react-v1.jpg)
 
-İlerleme Durumu : ![85%](https://progress-bar.dev/85)
+İlerleme Durumu : ![90%](https://progress-bar.dev/90)
 
 ## "Hello, World!" :)
 React Eğitimi hazırlamam için gelen baskılarından dolayı Udemy'de Platformunda yayınlanmak üzere eğitim hazırlamaya karar verdim.
@@ -20,7 +20,7 @@ Bu Eğitim için hazırlayacağım ek video içeriklerin dışında şimdilik be
 - [x] SCSS
 - [x] Bootstrap 5
 - [x] JavaScript
-- [ ] React
+- [x] React
 - [ ] Context API
 - [ ] Redux
 - [ ] APIlar ile Projeler Olusturmak
