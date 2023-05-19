@@ -12,7 +12,7 @@ export const products = [
     name: "Urun 2", 
     imgName: "https://picsum.photos/id/27/600/450", 
     thumbnail: "https://picsum.photos/id/27/600/450",
-    isAvailable: true,
+    isAvailable: false,
     isActive: false
   },
   {
@@ -36,6 +36,14 @@ export const products = [
     name: "Urun 5", 
     imgName: "https://picsum.photos/id/29/600/450", 
     thumbnail: "https://picsum.photos/id/29/600/450",
+    isAvailable: false,
+    isActive: false
+  },
+  {
+    id: 6, 
+    name: "Urun 6", 
+    imgName: "https://picsum.photos/id/219/600/450", 
+    thumbnail: "https://picsum.photos/id/219/600/450",
     isAvailable: true,
     isActive: false
   }
