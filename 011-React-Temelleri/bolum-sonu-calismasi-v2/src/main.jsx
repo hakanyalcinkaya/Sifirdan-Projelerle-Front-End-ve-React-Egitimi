@@ -10,9 +10,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 
 /*
-- [ ] Default Olarak Hicbir Gorsel Secilmesin ve bu durumda Gorsel Secilmedi Component i ekranda gozuksun
-- [ ] products icerisinde id, name, imgName, thumbnail, isAvailable(true/false), isActive(false)
-- [ ] Lorem Picsum Gorselleri imgName icinde ve thumbnail icinde tutulsun
-- [ ] Bolum Sonu Calismasi v1 Layout Uygulansin..
-- [ ] Img Thumbnail altinda sec butonu olsun ve sec dedigimizde isActive True olsun..
+- [x] Default Olarak Hicbir Gorsel Secilmesin ve bu durumda Gorsel Secilmedi Component i ekranda gozuksun
+- [x] products icerisinde id, name, imgName, thumbnail, isAvailable(true/false), isActive(false)
+- [x] Lorem Picsum Gorselleri imgName icinde ve thumbnail icinde tutulsun
+- [x] Bolum Sonu Calismasi v1 Layout Uygulansin..
+- [x] Img Thumbnail altinda sec butonu olsun ve sec dedigimizde isActive True olsun..
 */

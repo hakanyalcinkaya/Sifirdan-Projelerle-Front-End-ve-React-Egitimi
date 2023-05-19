@@ -1,10 +1,14 @@
-function ProductCard({ product }) {
+import ProductCardBtn from "./ProductCardBtn"
+
+function ProductCard({ product, handleProductSelect }) {
   return(
     <>
       <article>
         <header>{product.name}</header>
         <img src={product.thumbnail} alt=""  />
-        <footer>btn</footer>
+        <footer>
+          <ProductCardBtn productId={product.id} handleProductSelect={handleProductSelect} />
+        </footer>
       </article>
     </>
   )

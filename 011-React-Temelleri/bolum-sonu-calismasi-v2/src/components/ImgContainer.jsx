@@ -1,12 +1,12 @@
 import ProductCard from "./ProductCard"
 
-function ImgContainer({ products }) {
+function ImgContainer({ products, handleProductSelect }) {
   return (
     <div className="grid">
       {products.filter(
         product => product.isAvailable
       ).map(
-        product => <ProductCard product={product} key={product.id} />
+        product => <ProductCard product={product} key={product.id} handleProductSelect={handleProductSelect} />
       )
       }
     </div>
