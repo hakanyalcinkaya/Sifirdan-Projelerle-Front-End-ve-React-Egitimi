@@ -16,7 +16,7 @@ Bu Eğitim için hazırlayacağım ek video içeriklerin dışında şimdilik be
 - [x] HTML
 - [x] VS-Code
 - [x] Git, GitHub ve Markdown Kullanimi
-- [X] CSS
+- [x] CSS
 - [x] SCSS
 - [x] Bootstrap 5
 - [x] JavaScript
