@@ -1,13 +1,45 @@
+import { useEffect, useState } from "react"
+
 export default function TaskList({ tasks, removeTask, editTask }) {
+  const [priority, setPriority] = useState(false)
+  const [filteredTasks, setFilteredTask] = useState(tasks)
+
+  function handlePriorityFilter() {
+    setPriority(prev => !prev)
+    console.log("priority", priority)
+  }
+
+  /*
+    useEffect(() => {// fonc calis..}, [eger array bos ise ilk component yuklenince anlamina gelir])
+    useEffect(() => {// fonc calis..}, [item1, item2]) -> [item1, item2] -> bunlar degisince islem yap..
+  */
+
+
+  // tasks bilgisi component'e ulasinca filter'a esitle..
+  useEffect(() => {
+    setFilteredTask(tasks)
+  }, [tasks] )
+
+  // priority bilgisi degisirse..
+  useEffect(() => {
+    priority ? setFilteredTask(tasks.filter(item => item.priority === priority)) : setFilteredTask(tasks)
+  }, [priority] )
+
   if (tasks.length === 0) {
     return <></>
   }
+
   return (
     <>
       <div className="p-4 bg-light mb-5 border rounded">
-        <h4 className="">Gorevler:</h4>
+        <h4 className="mb-3">Gorevler: 
+          <span onClick={handlePriorityFilter}
+          className={`btn btn-sm ${!priority ? "btn-info" : "btn-primary"} float-end`}>
+            {!priority ? "Oncelikli Olanlari Goster" : "Hepsini Goster.."}
+          </span>
+        </h4>
         <ul className="list-group">
-          {tasks.map(
+          {filteredTasks.map(
             (item) =>
               <li className="list-group-item" key={item.uuid}>
                 {
