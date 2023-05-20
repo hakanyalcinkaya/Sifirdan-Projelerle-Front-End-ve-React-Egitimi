@@ -9,10 +9,11 @@ export default function TaskForm() {
 
   function editTask(uuid) {
     console.log(uuid)
+    const task = tasks.find(item => item.uuid === uuid)
+    setFormData({...task, isEdited: true })
   }
 
   function removeTask(uuid) {
-    console.log(uuid)
     setTasks(prev => prev.filter(item => item.uuid !== uuid))
   }
 
@@ -28,16 +29,21 @@ export default function TaskForm() {
 
   function handleFormSubmit(event) {
     event.preventDefault()
-    console.log(formData)
-    if (formData.task.length > 3) {
+    if (formData.isEdited) {
+      const taskIndex = tasks.findIndex(item => item.uuid === formData.uuid)
+      const newTasks = tasks.slice()
+      newTasks[taskIndex] = {...formData}
+      setTasks(newTasks)
+    }
+    else if (formData.task.length > 3) {
       formData.uuid = uuidv4()
       setTasks(
         prev => 
         [formData, ...prev]
       )
-      setFormData(emptyForm)
-      event.target.reset()
     }
+    setFormData(emptyForm)
+    event.target.reset()
   }
 
   return (
@@ -50,6 +56,7 @@ export default function TaskForm() {
             <input 
               type="text" className="form-control" 
               id="task" name="task" 
+              value={formData.task}
               onChange={handleInputChange} 
             />
           </div>
@@ -61,6 +68,7 @@ export default function TaskForm() {
               <input 
                 className="form-check-input" 
                 type="checkbox" id="priority" name="priority" 
+                checked={formData.priority}
                 onChange={handleInputChange} 
               />
                 <label className="form-check-label" htmlFor="priority">
