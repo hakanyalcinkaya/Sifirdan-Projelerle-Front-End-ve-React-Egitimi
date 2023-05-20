@@ -3,9 +3,18 @@ import {v4 as uuidv4} from 'uuid';
 import TaskList from "./TaskList"
 
 export default function TaskForm() {
-  const emptyForm = {task: "", priority: false, }
+  const emptyForm = {task: "", priority: false, isDone: false}
   const [formData, setFormData ] = useState(emptyForm)
   const [tasks, setTasks] = useState([]) 
+
+  function doneTask(uuid) {
+    const taskIndex = tasks.findIndex(item => item.uuid === uuid)
+    const task = tasks[taskIndex]
+    task.isDone = !task.isDone
+    const newTasks = tasks.slice()
+    newTasks[taskIndex] = task
+    setTasks(newTasks)
+  }
 
   function editTask(uuid) {
     const task = tasks.find(item => item.uuid === uuid)
@@ -47,8 +56,8 @@ export default function TaskForm() {
 
   return (
     <>
-      <TaskList tasks={tasks} removeTask={removeTask} editTask={editTask} />
-      
+      <TaskList tasks={tasks} removeTask={removeTask} editTask={editTask} doneTask={doneTask} />
+
       <form onSubmit={handleFormSubmit}>
         <div className="row mb-3">
           <label htmlFor="task" className="col-sm-2 col-form-label">Task</label>

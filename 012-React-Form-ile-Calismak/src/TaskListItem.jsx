@@ -1,8 +1,8 @@
 import TaskListItemIcon from "./TaskListItemIcon"
 
-function TaskListItem({ task }) {
+function TaskListItem({ task, editTask, removeTask, doneTask }) {
   return (
-    <li className="list-group-item">
+    <li className={`list-group-item ${task.isDone && 'bg-success bg-gradient'}`}>
       {
         task.priority &&
         <span className="badge text-bg-secondary me-2">
@@ -10,6 +10,12 @@ function TaskListItem({ task }) {
         </span>}
       {task.task}
       <div className="btn-group float-end" role="group">
+        <button
+          className="btn btn-sm btn-success"
+          onClick={() => doneTask(task.uuid)}
+        >
+          Bitti
+        </button>
         <button
           className="btn btn-sm btn-info"
           onClick={() => editTask(task.uuid)}
