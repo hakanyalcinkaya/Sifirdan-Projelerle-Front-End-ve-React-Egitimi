@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {v4 as uuidv4} from 'uuid';
 import TaskList from "./TaskList"
 
@@ -6,6 +6,21 @@ export default function TaskForm() {
   const emptyForm = {task: "", priority: false, isDone: false}
   const [formData, setFormData ] = useState(emptyForm)
   const [tasks, setTasks] = useState([]) 
+  const [taskChangeCount, setTaskChangeCount] = useState(0)  
+
+  // sayfa ilk acildiginda islem yap..
+  // useEffect(() => {}, []) -> Sayfa ilk Acilinca..
+  useEffect(() => {
+    const localStorageTasks = JSON.parse(localStorage.getItem("tasks"))
+    setTasks(localStorageTasks ?? [])
+  }, [])
+
+  // tasks bilgisi degisince islem yap
+  useEffect(() => {
+    if (taskChangeCount > 0) {
+      localStorage.setItem("tasks", JSON.stringify(tasks))
+    }
+  }, [taskChangeCount])
 
   function doneTask(uuid) {
     const taskIndex = tasks.findIndex(item => item.uuid === uuid)
@@ -14,15 +29,18 @@ export default function TaskForm() {
     const newTasks = tasks.slice()
     newTasks[taskIndex] = task
     setTasks(newTasks)
+    setTaskChangeCount(prev => prev + 1)
   }
 
   function editTask(uuid) {
     const task = tasks.find(item => item.uuid === uuid)
     setFormData({...task, isEdited: true })
+    setTaskChangeCount(prev => prev + 1)
   }
 
   function removeTask(uuid) {
     setTasks(prev => prev.filter(item => item.uuid !== uuid))
+    setTaskChangeCount(prev => prev + 1)
   }
 
   function handleInputChange(event) {
@@ -50,6 +68,7 @@ export default function TaskForm() {
         [formData, ...prev]
       )
     }
+    setTaskChangeCount(prev => prev + 1)
     setFormData(emptyForm)
     event.target.reset()
   }
