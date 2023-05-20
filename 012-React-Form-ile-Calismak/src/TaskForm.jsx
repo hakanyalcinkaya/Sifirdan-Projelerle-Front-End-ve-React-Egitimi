@@ -8,7 +8,6 @@ export default function TaskForm() {
   const [tasks, setTasks] = useState([]) 
 
   function editTask(uuid) {
-    console.log(uuid)
     const task = tasks.find(item => item.uuid === uuid)
     setFormData({...task, isEdited: true })
   }
@@ -49,6 +48,7 @@ export default function TaskForm() {
   return (
     <>
       <TaskList tasks={tasks} removeTask={removeTask} editTask={editTask} />
+      
       <form onSubmit={handleFormSubmit}>
         <div className="row mb-3">
           <label htmlFor="task" className="col-sm-2 col-form-label">Task</label>
