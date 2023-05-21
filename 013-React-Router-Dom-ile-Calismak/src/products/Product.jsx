@@ -6,7 +6,6 @@ export default function Product({user}) {
   // console.log(params)
   const {productId} = useParams()
   const [product, setProduct] = useState(null)
-  console.log(user)
 
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/${productId}`)
