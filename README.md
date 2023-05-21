@@ -22,7 +22,7 @@ Bu Eğitim için hazırlayacağım ek video içeriklerin dışında şimdilik be
 - [x] JavaScript
 - [x] React Temelleri (State ve Props)
 - [x] React - Form ile Calismak ve useEffect Kullanimi
-- [ ] React Router Dom 
+- [x] React Router Dom 
 - [ ] Context API
 - [ ] Redux
 - [ ] APIlar ile Projeler Olusturmak
