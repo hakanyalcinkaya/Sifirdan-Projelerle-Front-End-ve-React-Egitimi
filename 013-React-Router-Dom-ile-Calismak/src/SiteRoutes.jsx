@@ -10,8 +10,7 @@ import PrivateRoute from './PrivateRoute'
 
 
 export default function SiteRoutes({handleLogin, user, children}) {
-  console.log("SiteRoutes" , user)
-  console.log("SiteRoutes" , children)
+
 
   return (
     <Routes>

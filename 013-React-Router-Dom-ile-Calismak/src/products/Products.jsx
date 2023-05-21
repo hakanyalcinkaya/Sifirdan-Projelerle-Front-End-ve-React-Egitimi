@@ -3,7 +3,6 @@ import ProductCard from "./ProductCard"
 
 export default function Products({user}) {
   const [last10Products, setLast10Products] = useState([])
-  console.log("Products", user)
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products?limit=10")
