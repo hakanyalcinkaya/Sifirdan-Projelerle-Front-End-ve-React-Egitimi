@@ -18,10 +18,10 @@ npm run dev
 http://localhost:3000
 ```
 
-- [ ] React-Rouder-Dom ve Bootstrap Kurulumu 
-- [ ] Navbar Olusturulmasi 
-- [ ] Sayfa Yapisinin Olusturulmasi 
-- [ ] Sayfalara React Router Dom Uzerinden Ulasilabilmesi
+- [x] React-Rouder-Dom ve Bootstrap Kurulumu 
+- [x] Navbar Olusturulmasi 
+- [x] Sayfa Yapisinin Olusturulmasi 
+- [x] Sayfalara React Router Dom Uzerinden Ulasilabilmesi
 - [ ] Urunler Kisminin Olusturulmasi
 - [ ] Ana Sayfada 10 Urun Gosterilmesi
 - [ ] Urun Layout Yapisinin Olusturulasi -> Kategoriler ve Son 5 Urunun Linki
