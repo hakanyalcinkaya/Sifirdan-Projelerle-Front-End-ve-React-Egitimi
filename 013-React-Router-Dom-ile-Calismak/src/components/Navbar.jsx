@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 
-export default function Navbar({user, handleLogout}) {
+export default function Navbar({ user, handleLogout }) {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary mb-3" data-bs-theme="dark">
@@ -16,9 +16,13 @@ export default function Navbar({user, handleLogout}) {
               <NavLink className="nav-link" to="/about">Hakkimizda</NavLink>
               <NavLink className="nav-link" to="/contact">Iletisim</NavLink>
               {
-                user ? 
-                <button className="nav-link" onClick={handleLogout}>Logout ({user.name})</button> :
-                <NavLink className="nav-link" to="/login">Login</NavLink>
+                user ?
+                  <>
+                    <NavLink className="nav-link" to="/fav">Favoriler</NavLink>
+                    <button className="nav-link" onClick={handleLogout}>Logout ({user.name})</button>
+                  </> :
+                  <NavLink className="nav-link" to="/login">Login</NavLink>
+
               }
             </div>
           </div>
