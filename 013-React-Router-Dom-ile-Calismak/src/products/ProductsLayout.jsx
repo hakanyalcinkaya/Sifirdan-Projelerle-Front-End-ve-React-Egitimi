@@ -1,7 +1,17 @@
+import { Outlet } from "react-router-dom";
+import Category from "./Category";
+
 export default function ProductLayout() {
   return (
     <>
-      <h1>ProductLayout</h1>
+      <div className="row">
+        <div className="col-sm-8">
+          <Outlet />
+        </div>
+        <div className="col-sm-4">
+          <Category />
+        </div>
+      </div>
     </>
   )
 }
