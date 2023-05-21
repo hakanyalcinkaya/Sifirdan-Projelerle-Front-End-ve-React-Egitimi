@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
-export default function Product() {
+export default function Product({user}) {
   // const params = useParams()
   // console.log(params)
   const {productId} = useParams()
   const [product, setProduct] = useState(null)
+  console.log(user)
 
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/${productId}`)
