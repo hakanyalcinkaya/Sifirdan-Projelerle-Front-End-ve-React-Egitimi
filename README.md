@@ -4,11 +4,9 @@
 İlerleme Durumu : ![94%](https://progress-bar.dev/94)
 
 ## "Hello, World!" :)
-React Eğitimi hazırlamam için gelen baskılarından dolayı Udemy'de Platformunda yayınlanmak üzere eğitim hazırlamaya karar verdim.
+Hazırladığım Front-End ve React eğitimi sıfırdan bu yolculuğa başlamak isteyenler için tasarlandı. Her bölümde başlangıç düzenyinden başlayarak sınırlarımızı zorlayacak ve keyifli bilgiler öğreneceğiz. 
 
-Bu eğitimin bi değişikliği olsun istedim, sohbet havasını arttırmak, yazılımı daha fazla sevmenizi sağlamak için elimden geldiğince ilginç bir içerik hazırlayacağım.
-
-Bu Eğitim için hazırlayacağım ek video içeriklerin dışında şimdilik belirlediğim genel kategoriler;
+## Eğitim İçeriği:
 - [x] Roadmap
 - [x] Front-End Mindset
 - [x] Kurulum
