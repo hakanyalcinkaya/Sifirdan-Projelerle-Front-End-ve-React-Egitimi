@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -8,9 +10,9 @@ export default function Navbar(props) {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">Home</a>
-            <a className="nav-link" href="#">About</a>
-            <a className="nav-link" href="#">Contact</a>
+            <NavLink className="nav-link" to="/">Ana Sayfa</NavLink>
+            <NavLink className="nav-link" to="/hakkimizda">Hakkimizda</NavLink>
+            <NavLink className="nav-link" to="/iletisim">Iletisim</NavLink>
           </div>
         </div>
       </div>
