@@ -1,7 +1,7 @@
 # Sıfırdan Projelerle Front-End ve React Eğitimi
 [![Udemy - Sıfırdan Projelerle React Öğren](https://github.com/hakanyalcinkaya/hakanyalcinkaya/blob/main/assets/img/udemy-react-v1.jpg)](http://lnk.ktlzr.co/gt-repo-react)
 
-İlerleme Durumu : ![94%](https://progress-bar.dev/94)
+İlerleme Durumu : ![95%](https://progress-bar.dev/95)
 
 ## "Hello, World!" :)
 Hazırladığım Front-End ve React eğitimi sıfırdan bu yolculuğa başlamak isteyenler için tasarlandı. Her bölümde başlangıç düzenyinden başlayarak sınırlarımızı zorlayacak ve keyifli bilgiler öğreneceğiz. 
@@ -21,7 +21,7 @@ Hazırladığım Front-End ve React eğitimi sıfırdan bu yolculuğa başlamak 
 - [x] React Temelleri (State ve Props)
 - [x] React - Form ile Calismak ve useEffect Kullanimi
 - [x] React Router Dom 
-- [ ] Context API
+- [x] Context API
 - [ ] Redux
 - [ ] APIlar ile Projeler Olusturmak
 - [ ] Firebase
