@@ -40,7 +40,7 @@ export default function Footer(props) {
 
           <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>© 2023 Company, Inc. All rights reserved.</p>
-           
+           <p>Theme: ...</p>
           </div>
         </footer>
       </div>
