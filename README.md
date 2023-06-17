@@ -24,7 +24,7 @@ Hazırladığım Front-End ve React eğitimi sıfırdan bu yolculuğa başlamak 
 - [x] Context API
 - [ ] JWT Token ile Çalışmak
 - [ ] Redux
-- [ ] APIlar ile Projeler Olusturmak
+- [ ] API'lar ile Projeler Olusturmak
 - [ ] Firebase
 - [ ] Test
 - [ ] Front-End Developer'lar için Gerekli Olan Araçlar
