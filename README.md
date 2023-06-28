@@ -22,8 +22,8 @@ Hazırladığım Front-End ve React eğitimi sıfırdan bu yolculuğa başlamak 
 - [x] React - Form ile Calismak ve useEffect Kullanimi
 - [x] React Router Dom 
 - [x] Context API
-- [ ] JWT Token ile Çalışmak
 - [ ] Redux
+- [ ] JWT Token ile Çalışmak
 - [ ] API'lar ile Projeler Olusturmak
 - [ ] Firebase
 - [ ] Test
