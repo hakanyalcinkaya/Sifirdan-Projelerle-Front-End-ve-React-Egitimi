@@ -45,9 +45,9 @@ function App() {
       <hr />
       <CanadaStyledIcon />
       <h1>Styled Container Uygulandi ;)</h1>
-      <Button $primary className="btn" style={{marginBottom: "5px"}}>
+      <Button $primary className="btn mr-50" style={{marginBottom: "5px"}} >
         Incele
-      </Button>
+      </Button> gdrfgdfgdfgdrfdfg
       <br />
       <StrongButton $primary>
         Strong Button..
