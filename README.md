@@ -23,6 +23,7 @@ Hazırladığım Front-End ve React eğitimi sıfırdan bu yolculuğa başlamak 
 - [x] React Router Dom 
 - [x] Context API
 - [x] Styled Components (Not: Videolar Cekildi ama Yukleme Islemi Bitmedi.. Yuklemeler Bitince Bu Bilgiyi Kaldiracagim.)
+- [ ] useReducer ve Context API Kullanimi
 - [ ] Redux
 - [ ] JWT Token ile Çalışmak
 - [ ] API'lar ile Projeler Olusturmak
