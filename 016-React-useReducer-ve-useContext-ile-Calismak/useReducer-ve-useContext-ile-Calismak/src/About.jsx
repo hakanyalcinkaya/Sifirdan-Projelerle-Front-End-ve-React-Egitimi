@@ -1,5 +1,5 @@
 import { useReducer } from "react"
-import { DECREMENT, INCREMENT, RESET, countReducer, intialCountState } from "./reducer"
+import { DECREMENT, INCREMENT, RESET, countReducer, intialCountState } from "./reducer/counter"
 
 export default function About() {
   const [count, dispatch] = useReducer(countReducer, intialCountState)
