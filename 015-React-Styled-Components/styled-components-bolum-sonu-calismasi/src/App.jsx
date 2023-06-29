@@ -1,15 +1,22 @@
-import { useState } from 'react'
+import { useContext } from "react";
+import { ThemeProvider } from "styled-components";
+import { SiteContext } from "./context/SiteContext";
+import { GlobalStyle } from "./components/styled/GlobalStyle";
+import Header from "./components/Header";
+import { darkTheme, lightTheme } from "./theme";
+import Main from "./components/Main";
 
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const { themeName } = useContext(SiteContext);
 
   return (
-    <div className="App">
-      <h1>Hello React..</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <>
+      <ThemeProvider theme={themeName === "light" ? lightTheme : darkTheme}>
+        <GlobalStyle />
+        <Header />
+        <Main />
+      </ThemeProvider>
+    </>
   );
 }
-
-export default App
