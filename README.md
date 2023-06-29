@@ -22,7 +22,7 @@ Hazırladığım Front-End ve React eğitimi sıfırdan bu yolculuğa başlamak 
 - [x] React - Form ile Calismak ve useEffect Kullanimi
 - [x] React Router Dom 
 - [x] Context API
-- [ ] Styled Components
+- [x] Styled Components (Not: Videolar Cekildi ama Yukleme Islemi Bitmedi.. Yuklemeler Bitince Bu Bilgiyi Kaldiracagim.)
 - [ ] Redux
 - [ ] JWT Token ile Çalışmak
 - [ ] API'lar ile Projeler Olusturmak
