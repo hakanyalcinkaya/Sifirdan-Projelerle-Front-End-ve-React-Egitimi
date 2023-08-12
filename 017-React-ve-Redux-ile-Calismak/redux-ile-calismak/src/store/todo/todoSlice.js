@@ -9,9 +9,12 @@ const todoSlice = createSlice({
     addTodo(state, action) {
       state.unshift(action.payload)
       console.log("add:::", state, action)
+    }, 
+    removeTodo(state, action) {
+      state.splice(action.payload, 1)
     }
   }
 })
 
-export const { addTodo } = todoSlice.actions
+export const { addTodo, removeTodo } = todoSlice.actions
 export default todoSlice.reducer
