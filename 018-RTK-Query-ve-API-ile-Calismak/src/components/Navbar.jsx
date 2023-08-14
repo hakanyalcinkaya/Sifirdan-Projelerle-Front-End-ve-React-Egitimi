@@ -1,21 +1,22 @@
+import { NavLink } from "react-router-dom"
+
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">Navbar</a>
+        <NavLink className="navbar-brand" to="/">Navbar</NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
-            <a className="nav-link" href="#">Fetch: Kategoriler</a>
-            <a className="nav-link" href="#">Axios: Kategoriler</a>
-            <a className="nav-link" href="#">RTK Q: Kategoriler</a>
+            <NavLink className="nav-link active" aria-current="page" to="/">Ana Sayfa</NavLink>
+            <NavLink className="nav-link" to="/fetch-categories">Fetch: Kategoriler</NavLink>
+            <NavLink className="nav-link" to="/axios-categories">Axios: Kategoriler</NavLink>
+            <NavLink className="nav-link" to="/rtk-query-categories">RTK Q: Kategoriler</NavLink>
           </div>
         </div>
       </div>
     </nav>
-
   )
 }
