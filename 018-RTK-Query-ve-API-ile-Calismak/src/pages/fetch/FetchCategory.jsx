@@ -8,7 +8,7 @@ const VITE_CAT_API_URL = import.meta.env.VITE_CAT_API_URL
 const VITE_CAT_API_KEY = import.meta.env.VITE_CAT_API_KEY
 
 
-export default function FetchCategy() {
+export default function FetchCategory() {
   const { categoryName } = useParams()
   const [data, isLoading, isError, error] = useCategoryFetchApi(categoryName)
 
