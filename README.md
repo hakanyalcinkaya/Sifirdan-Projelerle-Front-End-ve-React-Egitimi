@@ -1,5 +1,5 @@
 # Sıfırdan Projelerle Front-End ve React Eğitimi
-[![Sıfırdan Projelerle React Öğren](https://github.com/hakanyalcinkaya/hakanyalcinkaya/blob/main/assets/img/udemy-react-v1.jpg)](http://lnk.ktlzr.co/gt-repo-react)
+[![Sıfırdan Projelerle React Öğren](https://github.com/hakanyalcinkaya/hakanyalcinkaya/blob/main/assets/img/udemy-react-v1.jpg)](https://link.hakanyalcinkaya.dev/gt-repo-react)
 
 [Sıfırdan Projelerle Front-End ve React Eğitimini İncele](https://link.hakanyalcinkaya.dev/gt-repo-react)
 
